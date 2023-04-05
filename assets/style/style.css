@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+@import url('./header.css');
+@import url('./main.css');
+
+:root {
+--main-background: hsl(222, 26%, 31%);
+--keypad-background: hsl(223, 31%, 20%);
+--screen-background: hsl(224, 36%, 15%);
+
+--key-blue-background: hsl(225, 21%, 49%);
+--key-blue-shadow: hsl(224, 28%, 35%);
+--key-red-background: hsl(6, 63%, 50%);
+--key-red-shadow: hsl(6, 70%, 34%);
+--key-oragen-background: hsl(30, 25%, 89%);
+--key-orange-shadow: hsl(28, 16%, 65%);
+
+--text-blue: hsl(221, 14%, 31%);
+--text-white: hsl(0, 0%, 100%);
+
+--font-primary: 'League Spartan';
+}
+
+* {
+    font-family: var(--font-primary), sans-serif;
+    font-size: 32px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--main-background);
+    width: 100vw;
+    height: 100vh;
+}
