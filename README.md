@@ -30,11 +30,11 @@ Os usuários devem ser capazes de:
 
 <html>
   <h4>Layout mobile tema padrão</h4>
-  <img src="./assets/img/screenshot-mobile-default.png" width="300px">
+  <img src="./assets/IMG/screenshot-mobile-default.png" width="300px">
   <h4>Layout mobile tema claro </h4>
-  <img src="./assets/img/screenshot-mobile-light.png" width="300px">
+  <img src="./assets/IMG/screenshot-mobile-light.png" width="300px">
   <h4>Layout mobile tema violeta</h4>
-  <img src="./assets/img/screenshot-mobile-violet.png" width="300px">
+  <img src="./assets/IMG/screenshot-mobile-violet.png" width="300px">
 <!--
     <h4>Layout mobile</h4>
     <img src="./assets/img/screenshot-mobile.png" width="300px">
