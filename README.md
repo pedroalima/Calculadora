@@ -29,30 +29,28 @@ Os usuários devem ser capazes de:
 ### Screenshots
 
 <html>
+  <h4>Layout mobile tema padrão</h4>
+  <img src="./assets/img/screenshot-mobile-default.png" width="300px">
+  <h4>Layout mobile tema claro </h4>
+  <img src="./assets/img/screenshot-mobile-light.png" width="300px">
+  <h4>Layout mobile tema violeta</h4>
+  <img src="./assets/img/screenshot-mobile-violet.png" width="300px">
 <!--
     <h4>Layout mobile</h4>
     <img src="./assets/img/screenshot-mobile.png" width="300px">
-    <h4>Layout mobile with data blank</h4>
-    <img src="./assets/img/screenshot-mobile-blank.png" width="300px">
-    <h4>Layout mobile with form complete</h4>
-    <img src="./assets/img/screenshot-mobile-form-complete.png" width="300px">
     <h4>Layout desktop </h4>
     <img src="./assets/img/screenshot-desktop.png" width="920px">
-    <h4>Layout desktop with data blank</h4>
-    <img src="./assets/img/screenshot-desktop-blank.png" width="920px">
-    <h4>Layout desktop with form complete</h4>
-    <img src="./assets/img/screenshot-desktop-form-complete.png" width="920px">
 -->
 </html>
 
 ## Minha caminhada
 
-- [ ] Preparativos do layout com mobile-first 
-- [ ] Layout mobile
+- [x] Preparativos do layout com mobile-first 
+- [x] Layout mobile
 - [ ] Feature de adição
 - [ ] Layout desktop
 - [ ] Feature de subtração
-- [ ] Temas
+- [ ] Feature de temas
 - [ ] Feature de multiplicação e divisão
 
 ### Propriedades
