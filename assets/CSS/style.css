@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+--main-background: hsl(222, 26%, 31%);
+--keypad-background: hsl(223, 31%, 20%);
+--screen-background: hsl(224, 36%, 15%);
+
+--key-functional-background: hsl(225, 21%, 49%);
+--key-functional-shadow: hsl(224, 28%, 35%);
+--key-equal-background: hsl(6, 63%, 50%);
+--key-equal-shadow: hsl(6, 70%, 34%);
+--key-number-operations-background: hsl(30, 25%, 89%);
+--key-number-operations-shadow: hsl(28, 16%, 65%);
+
+--text-primary: hsl(0, 0%, 100%);
+--text-secondary: hsl(221, 14%, 31%);
+--text-header: hsl(0, 0%, 100%);;
+
+--font-primary: 'League Spartan';
+}
+
+.light-theme:root {
+--main-background: hsl(0, 0%, 90%);
+--keypad-background: hsl(0, 5%, 81%);
+--screen-background: hsl(0, 0%, 93%);
+
+--key-functional-background: hsl(185, 42%, 37%);
+--key-functional-shadow: hsl(185, 58%, 25%);
+--key-equal-background: hsl(25, 98%, 40%);
+--key-equal-shadow: hsl(25, 99%, 27%);
+--key-number-operations-background: hsl(45, 7%, 89%);
+--key-number-operations-shadow: hsl(35, 11%, 61%);
+
+--text-primary: hsl(0, 0%, 100%);
+--text-secondary: hsl(60, 10%, 19%);
+--text-header: hsl(60, 10%, 19%);
+
+--font-primary: 'League Spartan';
+}
+
+.violet-theme:root {
+--main-background: hsl(268, 75%, 9%);
+--keypad-background: hsl(268, 71%, 12%);
+--screen-background: hsl(268, 71%, 12%);
+    
+--key-functional-background: hsl(281, 89%, 26%);
+--key-functional-shadow: hsl(285, 91%, 52%);
+--key-equal-background: hsl(176, 100%, 44%);
+--key-equal-shadow: hsl(177, 92%, 70%);
+--key-number-operations-background: hsl(268, 47%, 21%);
+--key-number-operations-shadow: hsl(290, 70%, 36%);
+    
+--text-primary: hsl(0, 0%, 100%);
+--text-secondary: hsl(52, 100%, 62%);
+--text-header: hsl(52, 100%, 62%);
+    
+--font-primary: 'League Spartan';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary), sans-serif;
+}
+
+body {
+    background-color: var(--main-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+/* Calclator header */
+.calc {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 325px;
+}
+
+.calc__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-header);
+}
+
+.calc__theme-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.calc__theme-container h3 {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.calc__label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    align-items: center;
+    text-align: center;
+}
+
+.calc__label p {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    margin-left: 3px;
+}
+
+.calc__container-ball {
+    background-color: var(--keypad-background);
+    padding: 0.3rem 0.3rem;
+    border-radius: 15px;
+    width: 70px;
+    height: 25px;
+    position: relative;
+}
+
+.calc__ball {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+    width: 15px;
+    height: 15px;
+    background-color: var(--key-equal-background);
+    border: 1px solid var(--key-equal-background);
+    border-radius: 50%;
+}
+
+.calc__checkbox {
+    display: none;
+}
+
+.calc__checkbox:checked + .calc__label .calc__ball {
+    transform: translateX(21px);
+}
+
+/* Screen */
+.screen {
+    background-color: var(--screen-background);
+    text-align: end;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.operations {
+    font-size: 32px;
+    color: var(--text-header);
+}
+
+
+/* Buttons */
+.buttons {
+    background-color: var(--keypad-background);
+    padding: 1.5rem;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8rem;
+}
+
+.button__buttons {
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    padding: 1.1rem 1rem 0.6rem 1rem;
+}
+
+.button__numbers-operations {
+    font-size: 28px;
+    color: var(--text-secondary);
+    background-color: var(--key-number-operations-background);
+    box-shadow: 0 5px var(--key-number-operations-shadow);
+}
+
+.button__functional {
+    font-size: 20px;
+    color: var(--text-primary);
+    background-color: var(--key-functional-background);
+    box-shadow: 0 5px var(--key-functional-shadow);
+}
+
+.button__equal {
+    font-size: 20px;
+    color: var(--text-primary);
+    background-color: var(--key-equal-background);
+    box-shadow: 0 5px var(--key-equal-shadow);
+}
+
+.button__reset,
+.button__equal {
+    grid-column: span 2;
+}

@@ -5,25 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+
+    <script src="./assets/JS/script.js" defer></script>
 
     <title>Calculator</title>
 </head>
 <body>
 
-    <header>
-        <div class="header__containers"></div>
-        <div class="header__containers"></div>
-    </header>
+    <main class="calc">
+        <div class="calc__header">
+            <h1>calc</h1>
+            <div class="calc__theme-container">
+                <h3>Theme</h3>
+                <div class="calc__input-container">
+                    <input type="checkbox" name="" id="checkbox" class="calc__checkbox">
+                    <label for="checkbox" class="calc__label">
+                        <p>1 2 3</p>
+                        <div class="calc__container-ball">
+                            <div class="calc__ball"></div>
+                        </div>
+                    </label>
 
+                </div>
+                
+            </div>
+        </div>
 
-    <main>
         <div class="screen">
-
+            <h2 class="operations">399,981</h2>
         </div>
 
         <div class="buttons">
-
+            <button class="button__buttons button__numbers-operations">7</button>
+            <button class="button__buttons button__numbers-operations">8</button>
+            <button class="button__buttons button__numbers-operations">9</button>
+            <button class="button__buttons button__functional">DEL</button>
+            <button class="button__buttons button__numbers-operations">4</button>
+            <button class="button__buttons button__numbers-operations">5</button>
+            <button class="button__buttons button__numbers-operations">6</button>
+            <button class="button__buttons button__numbers-operations">+</button>
+            <button class="button__buttons button__numbers-operations">1</button>
+            <button class="button__buttons button__numbers-operations">2</button>
+            <button class="button__buttons button__numbers-operations">3</button>
+            <button class="button__buttons button__numbers-operations">-</button>
+            <button class="button__buttons button__numbers-operations">.</button>
+            <button class="button__buttons button__numbers-operations">0</button>
+            <button class="button__buttons button__numbers-operations">/</button>
+            <button class="button__buttons button__numbers-operations">x</button>
+            <button class="button__buttons button__functional button__reset">RESET</button>
+            <button class="button__buttons button__equal">=</button>
         </div>
     </main>
 
