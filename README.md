@@ -33,13 +33,11 @@ Os usuários devem ser capazes de:
   <img src="./assets/IMG/screenshot-mobile-default.png" width="300px">
   <h4>Layout mobile tema claro </h4>
   <img src="./assets/IMG/screenshot-mobile-light.png" width="300px">
-  <h4>Layout mobile tema violeta</h4>
-  <img src="./assets/IMG/screenshot-mobile-violet.png" width="300px">
 <!--
     <h4>Layout mobile</h4>
-    <img src="./assets/img/screenshot-mobile.png" width="300px">
+    <img src="" width="300px">
     <h4>Layout desktop </h4>
-    <img src="./assets/img/screenshot-desktop.png" width="920px">
+    <img src="" width="920px">
 -->
 </html>
 
@@ -47,11 +45,9 @@ Os usuários devem ser capazes de:
 
 - [x] Preparativos do layout com mobile-first 
 - [x] Layout mobile
-- [ ] Feature de adição
+- [x] Features de inserir, limpar, deletar e calcular
 - [ ] Layout desktop
-- [ ] Feature de subtração
 - [ ] Feature de temas
-- [ ] Feature de multiplicação e divisão
 
 ### Propriedades
 
