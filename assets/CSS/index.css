@@ -155,6 +155,8 @@ body {
 .operations {
     font-size: 32px;
     color: var(--text-header);
+    overflow-wrap: break-word;
+    height: 20px;
 }
 
 

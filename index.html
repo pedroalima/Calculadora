@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="./assets/CSS/index.css">
 
-    <script src="./assets/JS/script.js" defer></script>
+    <script src="./assets/JS/index.js" defer></script>
 
     <title>Calculator</title>
 </head>
@@ -33,28 +33,28 @@
         </div>
 
         <div class="screen">
-            <h2 class="operations">399,981</h2>
+            <h2 class="operations" id="result"></h2>
         </div>
 
         <div class="buttons">
-            <button class="button__buttons button__numbers-operations">7</button>
-            <button class="button__buttons button__numbers-operations">8</button>
-            <button class="button__buttons button__numbers-operations">9</button>
-            <button class="button__buttons button__functional">DEL</button>
-            <button class="button__buttons button__numbers-operations">4</button>
-            <button class="button__buttons button__numbers-operations">5</button>
-            <button class="button__buttons button__numbers-operations">6</button>
-            <button class="button__buttons button__numbers-operations">+</button>
-            <button class="button__buttons button__numbers-operations">1</button>
-            <button class="button__buttons button__numbers-operations">2</button>
-            <button class="button__buttons button__numbers-operations">3</button>
-            <button class="button__buttons button__numbers-operations">-</button>
-            <button class="button__buttons button__numbers-operations">.</button>
-            <button class="button__buttons button__numbers-operations">0</button>
-            <button class="button__buttons button__numbers-operations">/</button>
-            <button class="button__buttons button__numbers-operations">x</button>
-            <button class="button__buttons button__functional button__reset">RESET</button>
-            <button class="button__buttons button__equal">=</button>
+            <button class="button__buttons button__numbers-operations" onclick="insert('7')">7</button>
+            <button class="button__buttons button__numbers-operations" onclick="insert('8')">8</button>
+            <button class="button__buttons button__numbers-operations" onclick="insert('9')">9</button>
+            <button class="button__buttons button__functional" onclick="delet()">DEL</button>
+            <button class="button__buttons button__numbers-operations" onclick="insert('4')">4</button>
+            <button class="button__buttons button__numbers-operations" onclick="insert('5')">5</button>
+            <button class="button__buttons button__numbers-operations" onclick="insert('6')">6</button>
+            <button class="button__buttons button__numbers-operations" onclick="insert('+')">+</button>
+            <button class="button__buttons button__numbers-operations" onclick="insert('1')">1</button>
+            <button class="button__buttons button__numbers-operations" onclick="insert('2')">2</button>
+            <button class="button__buttons button__numbers-operations" onclick="insert('3')">3</button>
+            <button class="button__buttons button__numbers-operations" onclick="insert('-')">-</button>
+            <button class="button__buttons button__numbers-operations" onclick="insert('.')">.</button>
+            <button class="button__buttons button__numbers-operations" onclick="insert('0')">0</button>
+            <button class="button__buttons button__numbers-operations" onclick="insert('/')">/</button>
+            <button class="button__buttons button__numbers-operations" onclick="insert('*')">x</button>
+            <button class="button__buttons button__functional button__reset" onclick="clean()">RESET</button>
+            <button class="button__buttons button__equal" onclick="calculate()">=</button>
         </div>
     </main>
 
