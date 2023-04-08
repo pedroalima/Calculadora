@@ -33,9 +33,9 @@ Os usuários devem ser capazes de:
   <img src="./assets/IMG/screenshot-mobile-default.png" width="300px">
   <h4>Layout mobile tema claro </h4>
   <img src="./assets/IMG/screenshot-mobile-light.png" width="300px">
-  <h4>Layout desktop </h4>
+  <h4>Layout desktop tema padrão</h4>
   <img src="./assets/IMG/screenshot-desktop-default.png" width="920px">
-  <h4>Layout desktop </h4>
+  <h4>Layout desktop tema claro</h4>
   <img src="./assets/IMG/screenshot-desktop-light.png" width="920px">
 <!--
     <h4>Layout mobile</h4>
