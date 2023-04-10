@@ -44,6 +44,28 @@
 --font-primary: 'League Spartan';
 }
 
+.dark-theme:root {
+    --main-background: #000000;
+    --keypad-background: #383838;
+    --screen-background: #6d6d6d;
+    
+    --key-functional-background: #146C94;
+    --key-functional-hover-background: #248bbb;
+    --key-functional-shadow: hsl(185, 58%, 25%);
+    --key-equal-background: hsl(25, 98%, 40%);
+    --key-equal-hover-background: hsl(25, 88%, 50%);
+    --key-equal-shadow: hsl(25, 99%, 27%);
+    --key-number-operations-background: hsl(45, 7%, 89%);
+    --key-number-operations-hover-background: hsl(0, 0%, 100%);
+    --key-number-operations-shadow: hsl(35, 11%, 61%);
+    
+    --text-primary: #F6F1F1;
+    --text-secondary: hsl(60, 10%, 19%);
+    --text-header: #F6F1F1;
+    
+    --font-primary: 'League Spartan';
+    }
+
 * {
     padding: 0;
     margin: 0;

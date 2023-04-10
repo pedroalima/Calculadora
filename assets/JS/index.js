@@ -21,12 +21,12 @@ function calculate() {
     };
 }
 
-
 // Feature responsible for changing the theme
 const inputCheckbox = document.querySelector('#checkbox');
 
 inputCheckbox.addEventListener('click', () => {
     const pageHTML =  document.querySelector('html');
 
-    pageHTML.classList.toggle('light-theme');
+    pageHTML.classList.toggle('dark-theme');
 });
+
