@@ -1,49 +1,58 @@
-    /* FEATURE CALCULATOR */
+/* FEATURE CALCULATOR */
 
-// Variável do visor da calculadora
+// Variável do campo de operações da calculadora e dos botões
 const result = document.querySelector('#result');
-// função para inserir dados
-function insert(num) {
+const buttons = document.querySelectorAll('.button__buttons');
+
+// Adiciona dados no visor
+const insert = (num) => {
     let number = result.innerHTML;
     result.innerHTML = number + num;
 }
 
-
-// Função para limpar
-function clean() {
-    result.innerHTML = '';
-}
-// Variável do botão reset
-const resetButton = document.querySelector('#resetButton');
-// Chama a função clean quando o evento de click acontece no botão reset
-resetButton.addEventListener('click', () => clean());
-
-
-// Função para deletar
-function delet() {
+// Deleta o ultimo caractere
+const delet = () => {
     let resultIn = result.innerHTML
     result.innerHTML = resultIn.substring(0, resultIn.length -1);
 }
-// Variável do botão dell
-const delButton = document.querySelector('#delButton');
-// Chama a função delet quando o evento de click acontece no botão dell
-delButton.addEventListener('click', () => delet());
 
+// Apaga todos os dados do visor
+const clean = () => {
+    result.innerHTML = '';
+}
 
-// Função para calcular
-function calculate() {
+// Calcula as operações
+const calculate = () => {
     let resultIn = result.innerHTML
     if (resultIn) {
         result.innerHTML = eval(resultIn);
     };
 }
-// Variável do botão igual
-const equalButton = document.querySelector('#equalButton');
-// Chama a função calcular quando o evento de click acontece no botão igual
-equalButton.addEventListener('click', () => calculate());
+
+// iteração da lista de botões
+buttons.forEach((button) => {
+    // Aciona o evento de click em cada botão da lista
+    button.addEventListener("click", (e) => {
+        const value = e.target.innerText;
+        // Valida os valores dos botões
+        if (+value >= 0 || value === ".") {
+            insert(value);
+        } else if (value === "DEL") {
+            delet();
+        } else if (value === "RESET") {
+            clean();
+        } else if (value === "=") {
+            calculate();
+        } else {
+            insert(value);
+        };
+
+    });
+
+});
 
 
-    /* FEATURE THEME */
+/* FEATURE THEME */
 
 // Variável do botão de temas
 const inputCheckbox = document.querySelector('#checkbox');

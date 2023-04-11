@@ -22,28 +22,6 @@
 --font-primary: 'League Spartan';
 }
 
-.light-theme:root {
---main-background: hsl(0, 0%, 90%);
---keypad-background: hsl(0, 5%, 81%);
---screen-background: hsl(0, 0%, 93%);
-
---key-functional-background: hsl(185, 42%, 37%);
---key-functional-hover-background: hsl(185, 37%, 50%);
---key-functional-shadow: hsl(185, 58%, 25%);
---key-equal-background: hsl(25, 98%, 40%);
---key-equal-hover-background: hsl(25, 88%, 50%);
---key-equal-shadow: hsl(25, 99%, 27%);
---key-number-operations-background: hsl(45, 7%, 89%);
---key-number-operations-hover-background: hsl(0, 0%, 100%);
---key-number-operations-shadow: hsl(35, 11%, 61%);
-
---text-primary: hsl(0, 0%, 100%);
---text-secondary: hsl(60, 10%, 19%);
---text-header: hsl(60, 10%, 19%);
-
---font-primary: 'League Spartan';
-}
-
 .dark-theme:root {
     --main-background: #000000;
     --keypad-background: #383838;
@@ -51,7 +29,7 @@
     
     --key-functional-background: #146C94;
     --key-functional-hover-background: #248bbb;
-    --key-functional-shadow: hsl(185, 58%, 25%);
+    --key-functional-shadow: rgb(6, 82, 117);
     --key-equal-background: hsl(25, 98%, 40%);
     --key-equal-hover-background: hsl(25, 88%, 50%);
     --key-equal-shadow: hsl(25, 99%, 27%);
