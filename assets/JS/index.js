@@ -9,18 +9,15 @@ const insert = (num) => {
     let number = result.innerHTML;
     result.innerHTML = number + num;
 }
-
 // Deleta o ultimo caractere
 const delet = () => {
     let resultIn = result.innerHTML
     result.innerHTML = resultIn.substring(0, resultIn.length -1);
 }
-
 // Apaga todos os dados do visor
 const clean = () => {
     result.innerHTML = '';
 }
-
 // Calcula as operações
 const calculate = () => {
     let resultIn = result.innerHTML
@@ -60,6 +57,6 @@ const inputCheckbox = document.querySelector('#checkbox');
 inputCheckbox.addEventListener('click', () => {
     const pageHTML =  document.querySelector('html');
 
-    pageHTML.classList.toggle('dark-theme');
+    pageHTML.classList.toggle('light-theme');
 });
 

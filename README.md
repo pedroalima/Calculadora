@@ -24,8 +24,6 @@ Os usuários devem ser capazes de:
 
 - Ajustar o tema de cores com base em sua preferência
 
-- Bônus: verifique a preferência de tema inicial usando preferes-color-scheme e salve as alterações adicionais no navegador
-
 ### Screenshots
 
 <html>
@@ -37,21 +35,16 @@ Os usuários devem ser capazes de:
   <img src="./assets/IMG/screenshot-desktop-default.png" width="920px">
   <h4>Layout desktop tema claro</h4>
   <img src="./assets/IMG/screenshot-desktop-light.png" width="920px">
-<!--
-    <h4>Layout mobile</h4>
-    <img src="" width="300px">
-    <h4>Layout desktop </h4>
-    <img src="" width="920px">
--->
 </html>
 
 ## Minha caminhada
 
-- [x] Preparativos do layout com mobile-first 
 - [x] Layout mobile
-- [x] Features de inserir, limpar, deletar e calcular
 - [x] Layout desktop
+- [x] Features da calculadora
 - [x] Feature de temas
+
+
 
 ### Propriedades
 
