@@ -44,8 +44,6 @@ Os usuários devem ser capazes de:
 - [x] Features da calculadora
 - [x] Feature de temas
 
-
-
 ### Propriedades
 
 - Mobile-first
@@ -56,28 +54,70 @@ Os usuários devem ser capazes de:
 - JavaScript data flow
 
 ### Meu aprendizado
-...
+Desta vez meu conhecimento da base de JavaScript foi consolidado, ao desenvolver uma calculadora muitos aspectos foram praticados como iteração de arrays, atributos de evento HTLM, métodos, condicionais para validação, arrow functions, function expression, etc...
 
 Trechos de destaque:
 
 HTML
 ```html
 ...
+<div class="buttons">
 
+  <button class="button__buttons button__numbers-operations">7</button>
+  <button class="button__buttons button__numbers-operations">8</button>
+  <button class="button__buttons button__numbers-operations">9</button>
+  <button class="button__buttons button__functional">DEL</button>
+  <button class="button__buttons button__numbers-operations">4</button>
+  <button class="button__buttons button__numbers-operations">5</button>
+  <button class="button__buttons button__numbers-operations">6</button>
+  <button class="button__buttons button__numbers-operations">+</button>
+  <button class="button__buttons button__numbers-operations">1</button>
+  <button class="button__buttons button__numbers-operations">2</button>
+  <button class="button__buttons button__numbers-operations">3</button>
+  <button class="button__buttons button__numbers-operations">-</button>
+  <button class="button__buttons button__numbers-operations">.</button>
+  <button class="button__buttons button__numbers-operations">0</button>
+  <button class="button__buttons button__numbers-operations">/</button>
+  <button class="button__buttons button__numbers-operations">*</button>
+  <button class="button__buttons button__functional button__reset">RESET</button>
+  <button class="button__buttons button__equal">=</button>
+            
+</div>
 ...
-```
-CSS
-```css
-
 ```
 JavaScript
 ```javascript
+...
+// iteração da lista de botões
+buttons.forEach((button) => {
+    // Aciona o evento de click em cada botão da lista
+    button.addEventListener("click", (e) => {
+        const value = e.target.innerText;
+        // Valida os valores dos botões
+        if (+value >= 0 || value === ".") {
+            insert(value);
+        } else if (value === "DEL") {
+            delet();
+        } else if (value === "RESET") {
+            clean();
+        } else if (value === "=") {
+            calculate();
+        } else {
+            insert(value);
+        };
 
+    });
+
+});
+...
 ```
 
 ### Recursos
+- [JS - .forEach() na MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) - Esse artigo vai te ajudar a entender como utilizar o iterador de array.
 
-- [CSS - Blocos, Elementos e Modificadores](https://getbem.com/introduction/) - Este é um artigo que vai te fazer entender a boa prática, para nomear as suas classes.
+- [JS - .addEventListener() na MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/addEventListener) - Esse artigo vai te ajudar a entender como utilizar o método de instância.
+
+- [JS - If...else na MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/if...else) - Esse artigo vai te ajudar a entender como utilizar a condicional.
 
 - [O desafio da Frontend Mentor](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29) - Neste link você encontrará o desafio solucionado aqui.
 
